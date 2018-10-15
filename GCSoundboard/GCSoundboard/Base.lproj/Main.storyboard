@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sound View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Main" id="BYZ-38-t0r" customClass="SoundViewController" customModule="GCSoundboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GCTitle" translatesAutoresizingMaskIntoConstraints="NO" id="0Br-1V-axJ">
+                                <rect key="frame" x="68.5" y="30" width="238" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="238" id="Sl1-Tz-Fjj"/>
+                                    <constraint firstAttribute="height" constant="79" id="pIh-aK-b4i"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bpP-w4-qsN">
+                                <rect key="frame" x="20" y="134" width="335" height="429"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yd7-AM-79b">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="soundeffectCell" id="sFY-6p-Yog" customClass="SoundeffectCell" customModule="GCSoundboard" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="4mR-4V-P5j"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="p3Q-vU-IOq"/>
+                                </connections>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="R6Q-Su-xoQ">
+                                <rect key="frame" x="147.5" y="563" width="80" height="54"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5M-8F-O3K" userLabel="Stop">
+                                        <rect key="frame" x="0.0" y="10" width="30" height="34"/>
+                                        <connections>
+                                            <action selector="stopSoundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="abb-OT-Kn8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzy-ix-fr6" userLabel="Random">
+                                        <rect key="frame" x="50" y="10" width="30" height="34"/>
+                                        <connections>
+                                            <action selector="randomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HKm-db-6ZY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="s5M-8F-O3K" firstAttribute="top" secondItem="R6Q-Su-xoQ" secondAttribute="top" constant="10" id="FaA-Z1-VeC"/>
+                                    <constraint firstAttribute="bottom" secondItem="zzy-ix-fr6" secondAttribute="bottom" constant="10" id="dM9-yS-aRW"/>
+                                    <constraint firstAttribute="bottom" secondItem="s5M-8F-O3K" secondAttribute="bottom" constant="10" id="uga-f3-OwE"/>
+                                    <constraint firstItem="zzy-ix-fr6" firstAttribute="top" secondItem="R6Q-Su-xoQ" secondAttribute="top" constant="10" id="wiR-dM-yZ1"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="R6Q-Su-xoQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PaS-9l-vjl"/>
+                            <constraint firstItem="bpP-w4-qsN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Xaq-tp-QI0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R6Q-Su-xoQ" secondAttribute="bottom" constant="50" id="aKh-SE-tPQ"/>
+                            <constraint firstItem="0Br-1V-axJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dpi-lS-Yok"/>
+                            <constraint firstItem="0Br-1V-axJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="e7W-ep-arR"/>
+                            <constraint firstItem="R6Q-Su-xoQ" firstAttribute="top" secondItem="bpP-w4-qsN" secondAttribute="bottom" id="gCq-Zi-Lee"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bpP-w4-qsN" secondAttribute="trailing" constant="20" id="mw3-ZK-3xG"/>
+                            <constraint firstItem="bpP-w4-qsN" firstAttribute="top" secondItem="0Br-1V-axJ" secondAttribute="bottom" constant="25" id="zBX-XR-pof"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="bpP-w4-qsN" id="khu-jd-oRI"/>
+                        <outlet property="randomButton" destination="zzy-ix-fr6" id="JhO-Lt-LMK"/>
+                        <outlet property="stackView" destination="R6Q-Su-xoQ" id="rgc-nC-SfS"/>
+                        <outlet property="stopSoundButton" destination="s5M-8F-O3K" id="MFS-tP-JNd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="31.03448275862069"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GCTitle" width="248" height="92"/>
+    </resources>
+</document>

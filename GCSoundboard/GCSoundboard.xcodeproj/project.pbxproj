@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		140BDAE4022373C09B0135A7 /* Pods_GCSoundboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59A38256AA23EC297AAD602 /* Pods_GCSoundboardTests.framework */; };
+		6F1B371020BECA7C00CC0F45 /* Cloned.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1B370D20BECA7C00CC0F45 /* Cloned.mp3 */; };
+		6F1B371120BECA7C00CC0F45 /* Cyah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1B370E20BECA7C00CC0F45 /* Cyah.mp3 */; };
+		6F1B371220BECA7C00CC0F45 /* Serious.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1B370F20BECA7C00CC0F45 /* Serious.mp3 */; };
+		6F1DF14C20B6CF0E00FB96B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1DF14B20B6CF0E00FB96B0 /* AppDelegate.swift */; };
+		6F1DF14E20B6CF0E00FB96B0 /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1DF14D20B6CF0E00FB96B0 /* SoundViewController.swift */; };
+		6F1DF15120B6CF0E00FB96B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1DF14F20B6CF0E00FB96B0 /* Main.storyboard */; };
+		6F1DF15320B6CF1600FB96B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1DF15220B6CF1600FB96B0 /* Assets.xcassets */; };
+		6F1DF15620B6CF1600FB96B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1DF15420B6CF1600FB96B0 /* LaunchScreen.storyboard */; };
+		6F1DF16120B6CF1600FB96B0 /* GCSoundboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1DF16020B6CF1600FB96B0 /* GCSoundboardTests.swift */; };
+		6F1DF16C20B7355700FB96B0 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1DF16B20B7355700FB96B0 /* AudioManager.swift */; };
+		6F234D3620E919FA0050DED9 /* Gemma.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F234D3520E919FA0050DED9 /* Gemma.mp3 */; };
+		6F4DC0D320BD9EC30084C857 /* SaidMeAgain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F4DC0D220BD9EC30084C857 /* SaidMeAgain.mp3 */; };
+		6F4DC0D920BDF9FB0084C857 /* dictionary.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F4DC0D620BDF9FB0084C857 /* dictionary.mp3 */; };
+		6F4DC0DA20BDF9FB0084C857 /* 247.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F4DC0D720BDF9FB0084C857 /* 247.mp3 */; };
+		6F4DC0DB20BDF9FB0084C857 /* Gillian.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F4DC0D820BDF9FB0084C857 /* Gillian.mp3 */; };
+		6F71F41720BF0C39007829A4 /* Talking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F71F41620BF0C38007829A4 /* Talking.mp3 */; };
+		6F71F41920BF0C4A007829A4 /* Bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F71F41820BF0C4A007829A4 /* Bell.mp3 */; };
+		6F71F41B20BF0C85007829A4 /* No.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F71F41A20BF0C85007829A4 /* No.mp3 */; };
+		6F9BA63820BCA51F00B70AFB /* Frazzled.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F9BA63520BCA51F00B70AFB /* Frazzled.mp3 */; };
+		6F9BA63920BCA51F00B70AFB /* Games.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F9BA63620BCA51F00B70AFB /* Games.mp3 */; };
+		6F9BA63C20BCA98800B70AFB /* I'mOff.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F9BA63B20BCA98800B70AFB /* I'mOff.mp3 */; };
+		6F9BA63E20BCAA5700B70AFB /* Arsehole.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F9BA63D20BCAA5700B70AFB /* Arsehole.mp3 */; };
+		6F9BA64020BCAC6C00B70AFB /* Money.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F9BA63F20BCAC6C00B70AFB /* Money.mp3 */; };
+		6F9BA64220BCAF4C00B70AFB /* Claustrophobic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F9BA64120BCAF4C00B70AFB /* Claustrophobic.mp3 */; };
+		6F9BA64420BCB07900B70AFB /* Suffer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F9BA64320BCB07900B70AFB /* Suffer.mp3 */; };
+		6F9BA64820BD69AD00B70AFB /* ShutYourMouth.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F9BA64520BD69AD00B70AFB /* ShutYourMouth.mp3 */; };
+		6F9BA64920BD69AD00B70AFB /* CheapClothes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F9BA64620BD69AD00B70AFB /* CheapClothes.mp3 */; };
+		6F9BA64A20BD69AD00B70AFB /* Hun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F9BA64720BD69AD00B70AFB /* Hun.mp3 */; };
+		6FCC520520DAF25D003CB993 /* SoundeffectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC520420DAF25D003CB993 /* SoundeffectCell.swift */; };
+		890316E920DB94DD00012178 /* Soundeffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890316E820DB94DD00012178 /* Soundeffect.swift */; };
+		89515AA920E4F8630003F15C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89515AA820E4F8630003F15C /* Theme.swift */; };
+		89515AAB20E525C20003F15C /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89515AAA20E525C20003F15C /* UIView+Animation.swift */; };
+		B844383AB13C1ADC2FD17AB4 /* Pods_GCSoundboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F9EB189356A89DB7D6E437 /* Pods_GCSoundboard.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F1DF15D20B6CF1600FB96B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F1DF14020B6CF0E00FB96B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F1DF14720B6CF0E00FB96B0;
+			remoteInfo = GCSoundboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1DF129B1EB3AAFFA5543ED0F /* Pods-GCSoundboardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCSoundboardTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GCSoundboardTests/Pods-GCSoundboardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		27F9EB189356A89DB7D6E437 /* Pods_GCSoundboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GCSoundboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1B370D20BECA7C00CC0F45 /* Cloned.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cloned.mp3; sourceTree = "<group>"; };
+		6F1B370E20BECA7C00CC0F45 /* Cyah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cyah.mp3; sourceTree = "<group>"; };
+		6F1B370F20BECA7C00CC0F45 /* Serious.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Serious.mp3; sourceTree = "<group>"; };
+		6F1DF14820B6CF0E00FB96B0 /* GCSoundboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCSoundboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1DF14B20B6CF0E00FB96B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F1DF14D20B6CF0E00FB96B0 /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
+		6F1DF15020B6CF0E00FB96B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F1DF15220B6CF1600FB96B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F1DF15520B6CF1600FB96B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F1DF15720B6CF1600FB96B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F1DF15C20B6CF1600FB96B0 /* GCSoundboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCSoundboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1DF16020B6CF1600FB96B0 /* GCSoundboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCSoundboardTests.swift; sourceTree = "<group>"; };
+		6F1DF16220B6CF1600FB96B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F1DF16B20B7355700FB96B0 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		6F234D3520E919FA0050DED9 /* Gemma.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gemma.mp3; sourceTree = "<group>"; };
+		6F4DC0D220BD9EC30084C857 /* SaidMeAgain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SaidMeAgain.mp3; sourceTree = "<group>"; };
+		6F4DC0D620BDF9FB0084C857 /* dictionary.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dictionary.mp3; sourceTree = "<group>"; };
+		6F4DC0D720BDF9FB0084C857 /* 247.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 247.mp3; sourceTree = "<group>"; };
+		6F4DC0D820BDF9FB0084C857 /* Gillian.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gillian.mp3; sourceTree = "<group>"; };
+		6F71F41620BF0C38007829A4 /* Talking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Talking.mp3; sourceTree = "<group>"; };
+		6F71F41820BF0C4A007829A4 /* Bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bell.mp3; sourceTree = "<group>"; };
+		6F71F41A20BF0C85007829A4 /* No.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = No.mp3; sourceTree = "<group>"; };
+		6F9BA63520BCA51F00B70AFB /* Frazzled.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Frazzled.mp3; sourceTree = "<group>"; };
+		6F9BA63620BCA51F00B70AFB /* Games.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Games.mp3; sourceTree = "<group>"; };
+		6F9BA63B20BCA98800B70AFB /* I'mOff.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "I'mOff.mp3"; sourceTree = "<group>"; };
+		6F9BA63D20BCAA5700B70AFB /* Arsehole.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Arsehole.mp3; sourceTree = "<group>"; };
+		6F9BA63F20BCAC6C00B70AFB /* Money.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Money.mp3; sourceTree = "<group>"; };
+		6F9BA64120BCAF4C00B70AFB /* Claustrophobic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Claustrophobic.mp3; sourceTree = "<group>"; };
+		6F9BA64320BCB07900B70AFB /* Suffer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Suffer.mp3; sourceTree = "<group>"; };
+		6F9BA64520BD69AD00B70AFB /* ShutYourMouth.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ShutYourMouth.mp3; sourceTree = "<group>"; };
+		6F9BA64620BD69AD00B70AFB /* CheapClothes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CheapClothes.mp3; sourceTree = "<group>"; };
+		6F9BA64720BD69AD00B70AFB /* Hun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hun.mp3; sourceTree = "<group>"; };
+		6FCC520420DAF25D003CB993 /* SoundeffectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundeffectCell.swift; sourceTree = "<group>"; };
+		890316E820DB94DD00012178 /* Soundeffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soundeffect.swift; sourceTree = "<group>"; };
+		89515AA820E4F8630003F15C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		89515AAA20E525C20003F15C /* UIView+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
+		A9218CD5D83EA76CA1935703 /* Pods-GCSoundboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCSoundboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GCSoundboard/Pods-GCSoundboard.debug.xcconfig"; sourceTree = "<group>"; };
+		C8A0AF593C44A35F0BD04ABB /* Pods-GCSoundboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCSoundboardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GCSoundboardTests/Pods-GCSoundboardTests.release.xcconfig"; sourceTree = "<group>"; };
+		E59A38256AA23EC297AAD602 /* Pods_GCSoundboardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GCSoundboardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF8719ED8C1AB01E1D4BA5D /* Pods-GCSoundboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCSoundboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-GCSoundboard/Pods-GCSoundboard.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F1DF14520B6CF0E00FB96B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B844383AB13C1ADC2FD17AB4 /* Pods_GCSoundboard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1DF15920B6CF1600FB96B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				140BDAE4022373C09B0135A7 /* Pods_GCSoundboardTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1944495BE50F819C595A439D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27F9EB189356A89DB7D6E437 /* Pods_GCSoundboard.framework */,
+				E59A38256AA23EC297AAD602 /* Pods_GCSoundboardTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2AFBB6004C6B198B83A1E412 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9218CD5D83EA76CA1935703 /* Pods-GCSoundboard.debug.xcconfig */,
+				EEF8719ED8C1AB01E1D4BA5D /* Pods-GCSoundboard.release.xcconfig */,
+				1DF129B1EB3AAFFA5543ED0F /* Pods-GCSoundboardTests.debug.xcconfig */,
+				C8A0AF593C44A35F0BD04ABB /* Pods-GCSoundboardTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6F1DF13F20B6CF0E00FB96B0 = {
+			isa = PBXGroup;
+			children = (
+				6F1DF14A20B6CF0E00FB96B0 /* GCSoundboard */,
+				6F1DF15F20B6CF1600FB96B0 /* GCSoundboardTests */,
+				6F1DF14920B6CF0E00FB96B0 /* Products */,
+				6F9BA63220BC661600B70AFB /* Sounds */,
+				2AFBB6004C6B198B83A1E412 /* Pods */,
+				1944495BE50F819C595A439D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6F1DF14920B6CF0E00FB96B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F1DF14820B6CF0E00FB96B0 /* GCSoundboard.app */,
+				6F1DF15C20B6CF1600FB96B0 /* GCSoundboardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F1DF14A20B6CF0E00FB96B0 /* GCSoundboard */ = {
+			isa = PBXGroup;
+			children = (
+				6F1DF14B20B6CF0E00FB96B0 /* AppDelegate.swift */,
+				6F1DF16B20B7355700FB96B0 /* AudioManager.swift */,
+				6F1DF14F20B6CF0E00FB96B0 /* Main.storyboard */,
+				6F1DF15220B6CF1600FB96B0 /* Assets.xcassets */,
+				6F1DF15420B6CF1600FB96B0 /* LaunchScreen.storyboard */,
+				6F1DF15720B6CF1600FB96B0 /* Info.plist */,
+				89515AAA20E525C20003F15C /* UIView+Animation.swift */,
+				6F1DF14D20B6CF0E00FB96B0 /* SoundViewController.swift */,
+				6FCC520420DAF25D003CB993 /* SoundeffectCell.swift */,
+				890316E820DB94DD00012178 /* Soundeffect.swift */,
+				89515AA820E4F8630003F15C /* Theme.swift */,
+			);
+			path = GCSoundboard;
+			sourceTree = "<group>";
+		};
+		6F1DF15F20B6CF1600FB96B0 /* GCSoundboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F1DF16020B6CF1600FB96B0 /* GCSoundboardTests.swift */,
+				6F1DF16220B6CF1600FB96B0 /* Info.plist */,
+			);
+			path = GCSoundboardTests;
+			sourceTree = "<group>";
+		};
+		6F9BA63220BC661600B70AFB /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6F9BA63520BCA51F00B70AFB /* Frazzled.mp3 */,
+				6F9BA63620BCA51F00B70AFB /* Games.mp3 */,
+				6F9BA63B20BCA98800B70AFB /* I'mOff.mp3 */,
+				6F9BA63D20BCAA5700B70AFB /* Arsehole.mp3 */,
+				6F9BA63F20BCAC6C00B70AFB /* Money.mp3 */,
+				6F1B370D20BECA7C00CC0F45 /* Cloned.mp3 */,
+				6F71F41820BF0C4A007829A4 /* Bell.mp3 */,
+				6F1B370E20BECA7C00CC0F45 /* Cyah.mp3 */,
+				6F1B370F20BECA7C00CC0F45 /* Serious.mp3 */,
+				6F234D3520E919FA0050DED9 /* Gemma.mp3 */,
+				6F71F41A20BF0C85007829A4 /* No.mp3 */,
+				6F9BA64120BCAF4C00B70AFB /* Claustrophobic.mp3 */,
+				6F71F41620BF0C38007829A4 /* Talking.mp3 */,
+				6F4DC0D720BDF9FB0084C857 /* 247.mp3 */,
+				6F4DC0D620BDF9FB0084C857 /* dictionary.mp3 */,
+				6F4DC0D820BDF9FB0084C857 /* Gillian.mp3 */,
+				6F9BA64320BCB07900B70AFB /* Suffer.mp3 */,
+				6F9BA64620BD69AD00B70AFB /* CheapClothes.mp3 */,
+				6F4DC0D220BD9EC30084C857 /* SaidMeAgain.mp3 */,
+				6F9BA64720BD69AD00B70AFB /* Hun.mp3 */,
+				6F9BA64520BD69AD00B70AFB /* ShutYourMouth.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F1DF14720B6CF0E00FB96B0 /* GCSoundboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F1DF16520B6CF1600FB96B0 /* Build configuration list for PBXNativeTarget "GCSoundboard" */;
+			buildPhases = (
+				47AEAF86CD9DCD5FF88BB721 /* [CP] Check Pods Manifest.lock */,
+				6F1DF14420B6CF0E00FB96B0 /* Sources */,
+				6F1DF14520B6CF0E00FB96B0 /* Frameworks */,
+				6F1DF14620B6CF0E00FB96B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GCSoundboard;
+			productName = GCSoundboard;
+			productReference = 6F1DF14820B6CF0E00FB96B0 /* GCSoundboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F1DF15B20B6CF1600FB96B0 /* GCSoundboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F1DF16820B6CF1600FB96B0 /* Build configuration list for PBXNativeTarget "GCSoundboardTests" */;
+			buildPhases = (
+				0576F1C0DC5A8ED4B841877B /* [CP] Check Pods Manifest.lock */,
+				6F1DF15820B6CF1600FB96B0 /* Sources */,
+				6F1DF15920B6CF1600FB96B0 /* Frameworks */,
+				6F1DF15A20B6CF1600FB96B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F1DF15E20B6CF1600FB96B0 /* PBXTargetDependency */,
+			);
+			name = GCSoundboardTests;
+			productName = GCSoundboardTests;
+			productReference = 6F1DF15C20B6CF1600FB96B0 /* GCSoundboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F1DF14020B6CF0E00FB96B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Kieran;
+				TargetAttributes = {
+					6F1DF14720B6CF0E00FB96B0 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					6F1DF15B20B6CF1600FB96B0 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 6F1DF14720B6CF0E00FB96B0;
+					};
+				};
+			};
+			buildConfigurationList = 6F1DF14320B6CF0E00FB96B0 /* Build configuration list for PBXProject "GCSoundboard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F1DF13F20B6CF0E00FB96B0;
+			productRefGroup = 6F1DF14920B6CF0E00FB96B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F1DF14720B6CF0E00FB96B0 /* GCSoundboard */,
+				6F1DF15B20B6CF1600FB96B0 /* GCSoundboardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F1DF14620B6CF0E00FB96B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F9BA64020BCAC6C00B70AFB /* Money.mp3 in Resources */,
+				6F71F41B20BF0C85007829A4 /* No.mp3 in Resources */,
+				6F9BA63920BCA51F00B70AFB /* Games.mp3 in Resources */,
+				6F4DC0D920BDF9FB0084C857 /* dictionary.mp3 in Resources */,
+				6F9BA63820BCA51F00B70AFB /* Frazzled.mp3 in Resources */,
+				6F9BA64820BD69AD00B70AFB /* ShutYourMouth.mp3 in Resources */,
+				6F1B371220BECA7C00CC0F45 /* Serious.mp3 in Resources */,
+				6F71F41920BF0C4A007829A4 /* Bell.mp3 in Resources */,
+				6F9BA64A20BD69AD00B70AFB /* Hun.mp3 in Resources */,
+				6F1B371020BECA7C00CC0F45 /* Cloned.mp3 in Resources */,
+				6F1B371120BECA7C00CC0F45 /* Cyah.mp3 in Resources */,
+				6F4DC0DA20BDF9FB0084C857 /* 247.mp3 in Resources */,
+				6F4DC0D320BD9EC30084C857 /* SaidMeAgain.mp3 in Resources */,
+				6F1DF15620B6CF1600FB96B0 /* LaunchScreen.storyboard in Resources */,
+				6F234D3620E919FA0050DED9 /* Gemma.mp3 in Resources */,
+				6F9BA64920BD69AD00B70AFB /* CheapClothes.mp3 in Resources */,
+				6F4DC0DB20BDF9FB0084C857 /* Gillian.mp3 in Resources */,
+				6F1DF15320B6CF1600FB96B0 /* Assets.xcassets in Resources */,
+				6F9BA63E20BCAA5700B70AFB /* Arsehole.mp3 in Resources */,
+				6F71F41720BF0C39007829A4 /* Talking.mp3 in Resources */,
+				6F1DF15120B6CF0E00FB96B0 /* Main.storyboard in Resources */,
+				6F9BA64420BCB07900B70AFB /* Suffer.mp3 in Resources */,
+				6F9BA64220BCAF4C00B70AFB /* Claustrophobic.mp3 in Resources */,
+				6F9BA63C20BCA98800B70AFB /* I'mOff.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1DF15A20B6CF1600FB96B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0576F1C0DC5A8ED4B841877B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GCSoundboardTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47AEAF86CD9DCD5FF88BB721 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GCSoundboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F1DF14420B6CF0E00FB96B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1DF14E20B6CF0E00FB96B0 /* SoundViewController.swift in Sources */,
+				6F1DF16C20B7355700FB96B0 /* AudioManager.swift in Sources */,
+				890316E920DB94DD00012178 /* Soundeffect.swift in Sources */,
+				6FCC520520DAF25D003CB993 /* SoundeffectCell.swift in Sources */,
+				6F1DF14C20B6CF0E00FB96B0 /* AppDelegate.swift in Sources */,
+				89515AA920E4F8630003F15C /* Theme.swift in Sources */,
+				89515AAB20E525C20003F15C /* UIView+Animation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1DF15820B6CF1600FB96B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1DF16120B6CF1600FB96B0 /* GCSoundboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F1DF15E20B6CF1600FB96B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F1DF14720B6CF0E00FB96B0 /* GCSoundboard */;
+			targetProxy = 6F1DF15D20B6CF1600FB96B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F1DF14F20B6CF0E00FB96B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F1DF15020B6CF0E00FB96B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F1DF15420B6CF1600FB96B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F1DF15520B6CF1600FB96B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F1DF16320B6CF1600FB96B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F1DF16420B6CF1600FB96B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F1DF16620B6CF1600FB96B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9218CD5D83EA76CA1935703 /* Pods-GCSoundboard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X8DY7X85FX;
+				INFOPLIST_FILE = GCSoundboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KMFProggramming.GCSoundboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F1DF16720B6CF1600FB96B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEF8719ED8C1AB01E1D4BA5D /* Pods-GCSoundboard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X8DY7X85FX;
+				INFOPLIST_FILE = GCSoundboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KMFProggramming.GCSoundboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F1DF16920B6CF1600FB96B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DF129B1EB3AAFFA5543ED0F /* Pods-GCSoundboardTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X8DY7X85FX;
+				INFOPLIST_FILE = GCSoundboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KMFProggramming.GCSoundboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GCSoundboard.app/GCSoundboard";
+			};
+			name = Debug;
+		};
+		6F1DF16A20B6CF1600FB96B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8A0AF593C44A35F0BD04ABB /* Pods-GCSoundboardTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X8DY7X85FX;
+				INFOPLIST_FILE = GCSoundboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KMFProggramming.GCSoundboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GCSoundboard.app/GCSoundboard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F1DF14320B6CF0E00FB96B0 /* Build configuration list for PBXProject "GCSoundboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1DF16320B6CF1600FB96B0 /* Debug */,
+				6F1DF16420B6CF1600FB96B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F1DF16520B6CF1600FB96B0 /* Build configuration list for PBXNativeTarget "GCSoundboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1DF16620B6CF1600FB96B0 /* Debug */,
+				6F1DF16720B6CF1600FB96B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F1DF16820B6CF1600FB96B0 /* Build configuration list for PBXNativeTarget "GCSoundboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1DF16920B6CF1600FB96B0 /* Debug */,
+				6F1DF16A20B6CF1600FB96B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F1DF14020B6CF0E00FB96B0 /* Project object */;
+}
