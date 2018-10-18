@@ -15,6 +15,8 @@ class SoundViewController: UIViewController, GADBannerViewDelegate, UICollection
     private static let AD_UNIT_ID: String = "ca-app-pub-3940256099942544/2934735716"
     
     private static let SOUNDEFFECTS: [Soundeffect] = [
+        Soundeffect.init(name: "Involved", sound: ""),
+        Soundeffect.init(name: "Be Me", sound: ""),
         Soundeffect.init(name: "Serious", sound: "Serious"),
         Soundeffect.init(name: "You Do\nIt Hun", sound: "Hun"),
         Soundeffect.init(name: "Gemma", sound: "Gemma"),
@@ -72,20 +74,34 @@ class SoundViewController: UIViewController, GADBannerViewDelegate, UICollection
         collectionView.dataSource = self
         
         // Setup random / stop sound button cells
-        
         stopSoundButton.backgroundColor = UIColor.clear
         randomButton.backgroundColor = UIColor.clear
-        
-        
-        stopSoundButton.layer.cornerRadius = stopSoundButton.frame.width / 2
-        randomButton.layer.cornerRadius = stopSoundButton.frame.width / 2
-
         stopSoundButton.layer.borderWidth = 7
         randomButton.layer.borderWidth = 7
-        
         stopSoundButton.layer.borderColor = UIColor.white.cgColor
         randomButton.layer.borderColor = UIColor.white.cgColor
         
+        // Button labels
+        stopSoundButton.setTitle("Stop\nSound", for: .normal)
+        randomButton.setTitle("Random\nSound", for: .normal)
+        stopSoundButton.titleLabel?.numberOfLines = 2
+        randomButton.titleLabel?.numberOfLines = 2
+        stopSoundButton.titleLabel?.textAlignment = .center
+        randomButton.titleLabel?.textAlignment = .center
+        
+        if UIScreen.main.bounds.width == 320.0 {
+            stopSoundButton.titleLabel?.font =  UIFont(name: "ChalkboardSE-Bold", size: 16)
+            randomButton.titleLabel?.font =  UIFont(name: "ChalkboardSE-Bold", size: 16)
+        } else {
+            stopSoundButton.titleLabel?.font =  UIFont(name: "ChalkboardSE-Bold", size: 18)
+            randomButton.titleLabel?.font =  UIFont(name: "ChalkboardSE-Bold", size: 18)
+        }
+    }
+
+    // FIXME: Shouldn't be changing layouts at runtime
+    override func viewDidAppear(_ animated: Bool) {
+        stopSoundButton.layer.cornerRadius = stopSoundButton.frame.width / 2
+        randomButton.layer.cornerRadius = randomButton.frame.width / 2
     }
 
     // Set adMob banners constraints to safe area
@@ -114,7 +130,6 @@ class SoundViewController: UIViewController, GADBannerViewDelegate, UICollection
     @IBAction func stopSoundButton(_ sender: Any) {
         AudioManager.singleton.stopAll()
         self.stopSoundButton.spin()
-
     }
     
     // Play a random sound / animate button
