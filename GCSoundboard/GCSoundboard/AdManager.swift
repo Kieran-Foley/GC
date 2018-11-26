@@ -13,7 +13,7 @@ class AdManager:  NSObject, GADInterstitialDelegate {
     
     static let SINGLETON = AdManager()
     
-    // Popover ad
+    // Popover ad : ca-app-pub-1725298510457190/9515229573
     var interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
     
     

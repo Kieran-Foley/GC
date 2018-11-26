@@ -183,5 +183,5 @@ class SoundViewController: UIViewController, GADBannerViewDelegate, UICollection
 
 /*  ToDo:
 *   Fix layout issues (Cell rendering should not be in viewDidAppear)
-*
+*   Build schemes for correct google ad keys
 */
