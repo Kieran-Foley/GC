@@ -15,8 +15,9 @@ class SoundViewController: UIViewController, GADBannerViewDelegate, UICollection
     private static let AD_UNIT_ID: String = "ca-app-pub-3940256099942544/2934735716"
     
     private static let SOUNDEFFECTS: [Soundeffect] = [
-        Soundeffect.init(name: "Involved", sound: ""),
-        Soundeffect.init(name: "Be Me", sound: ""),
+        Soundeffect.init(name: "Involved", sound: "involved"),
+        Soundeffect.init(name: "Be Me", sound: "beMe"),
+        Soundeffect.init(name: "Candy", sound: "candy"),
         Soundeffect.init(name: "Serious", sound: "Serious"),
         Soundeffect.init(name: "You Do\nIt Hun", sound: "Hun"),
         Soundeffect.init(name: "Gemma", sound: "Gemma"),

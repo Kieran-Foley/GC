@@ -19,6 +19,10 @@
 		6F1DF16120B6CF1600FB96B0 /* GCSoundboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1DF16020B6CF1600FB96B0 /* GCSoundboardTests.swift */; };
 		6F1DF16C20B7355700FB96B0 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1DF16B20B7355700FB96B0 /* AudioManager.swift */; };
 		6F234D3620E919FA0050DED9 /* Gemma.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F234D3520E919FA0050DED9 /* Gemma.mp3 */; };
+		6F3E3D8D21AC867C003AE380 /* beMe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F3E3D8B21AC867C003AE380 /* beMe.mp3 */; };
+		6F3E3D8E21AC867C003AE380 /* involved.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F3E3D8C21AC867C003AE380 /* involved.mp3 */; };
+		6F3E3D9021AC86C0003AE380 /* candy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F3E3D8F21AC86C0003AE380 /* candy.mp3 */; };
+		6F3E3D9221AC8D60003AE380 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E3D9121AC8D60003AE380 /* AdManager.swift */; };
 		6F4DC0D320BD9EC30084C857 /* SaidMeAgain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F4DC0D220BD9EC30084C857 /* SaidMeAgain.mp3 */; };
 		6F4DC0D920BDF9FB0084C857 /* dictionary.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F4DC0D620BDF9FB0084C857 /* dictionary.mp3 */; };
 		6F4DC0DA20BDF9FB0084C857 /* 247.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F4DC0D720BDF9FB0084C857 /* 247.mp3 */; };
@@ -71,6 +75,10 @@
 		6F1DF16220B6CF1600FB96B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F1DF16B20B7355700FB96B0 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		6F234D3520E919FA0050DED9 /* Gemma.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gemma.mp3; sourceTree = "<group>"; };
+		6F3E3D8B21AC867C003AE380 /* beMe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beMe.mp3; sourceTree = "<group>"; };
+		6F3E3D8C21AC867C003AE380 /* involved.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = involved.mp3; sourceTree = "<group>"; };
+		6F3E3D8F21AC86C0003AE380 /* candy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = candy.mp3; sourceTree = "<group>"; };
+		6F3E3D9121AC8D60003AE380 /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
 		6F4DC0D220BD9EC30084C857 /* SaidMeAgain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SaidMeAgain.mp3; sourceTree = "<group>"; };
 		6F4DC0D620BDF9FB0084C857 /* dictionary.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dictionary.mp3; sourceTree = "<group>"; };
 		6F4DC0D720BDF9FB0084C857 /* 247.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 247.mp3; sourceTree = "<group>"; };
@@ -171,6 +179,7 @@
 				89515AAA20E525C20003F15C /* UIView+Animation.swift */,
 				6F1DF14D20B6CF0E00FB96B0 /* SoundViewController.swift */,
 				6FCC520420DAF25D003CB993 /* SoundeffectCell.swift */,
+				6F3E3D9121AC8D60003AE380 /* AdManager.swift */,
 				890316E820DB94DD00012178 /* Soundeffect.swift */,
 				89515AA820E4F8630003F15C /* Theme.swift */,
 			);
@@ -194,11 +203,14 @@
 				6F9BA63B20BCA98800B70AFB /* I'mOff.mp3 */,
 				6F9BA63D20BCAA5700B70AFB /* Arsehole.mp3 */,
 				6F9BA63F20BCAC6C00B70AFB /* Money.mp3 */,
+				6F3E3D8F21AC86C0003AE380 /* candy.mp3 */,
 				6F1B370D20BECA7C00CC0F45 /* Cloned.mp3 */,
 				6F71F41820BF0C4A007829A4 /* Bell.mp3 */,
 				6F1B370E20BECA7C00CC0F45 /* Cyah.mp3 */,
 				6F1B370F20BECA7C00CC0F45 /* Serious.mp3 */,
 				6F234D3520E919FA0050DED9 /* Gemma.mp3 */,
+				6F3E3D8B21AC867C003AE380 /* beMe.mp3 */,
+				6F3E3D8C21AC867C003AE380 /* involved.mp3 */,
 				6F71F41A20BF0C85007829A4 /* No.mp3 */,
 				6F9BA64120BCAF4C00B70AFB /* Claustrophobic.mp3 */,
 				6F71F41620BF0C38007829A4 /* Talking.mp3 */,
@@ -298,6 +310,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F9BA64020BCAC6C00B70AFB /* Money.mp3 in Resources */,
+				6F3E3D8E21AC867C003AE380 /* involved.mp3 in Resources */,
+				6F3E3D8D21AC867C003AE380 /* beMe.mp3 in Resources */,
 				6F71F41B20BF0C85007829A4 /* No.mp3 in Resources */,
 				6F9BA63920BCA51F00B70AFB /* Games.mp3 in Resources */,
 				6F4DC0D920BDF9FB0084C857 /* dictionary.mp3 in Resources */,
@@ -320,6 +334,7 @@
 				6F1DF15120B6CF0E00FB96B0 /* Main.storyboard in Resources */,
 				6F9BA64420BCB07900B70AFB /* Suffer.mp3 in Resources */,
 				6F9BA64220BCAF4C00B70AFB /* Claustrophobic.mp3 in Resources */,
+				6F3E3D9021AC86C0003AE380 /* candy.mp3 in Resources */,
 				6F9BA63C20BCA98800B70AFB /* I'mOff.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +394,7 @@
 			files = (
 				6F1DF14E20B6CF0E00FB96B0 /* SoundViewController.swift in Sources */,
 				6F1DF16C20B7355700FB96B0 /* AudioManager.swift in Sources */,
+				6F3E3D9221AC8D60003AE380 /* AdManager.swift in Sources */,
 				890316E920DB94DD00012178 /* Soundeffect.swift in Sources */,
 				6FCC520520DAF25D003CB993 /* SoundeffectCell.swift in Sources */,
 				6F1DF14C20B6CF0E00FB96B0 /* AppDelegate.swift in Sources */,
