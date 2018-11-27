@@ -48,10 +48,12 @@ class SoundeffectCell: UICollectionViewCell {
         self.spin()
         AudioManager.singleton.playSound(name: (soundeffect?.soundPath)!)
         randomAd()
+        let impact = UIImpactFeedbackGenerator()
+        impact.impactOccurred()
     }
     
     func randomAd() {
-        let number = Int.random(in: 0 ... 5)
+        let number = Int.random(in: 0 ... 7)
         if number == 5 {
             AdManager.SINGLETON.showAd()
         }

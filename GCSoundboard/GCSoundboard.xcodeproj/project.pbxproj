@@ -41,6 +41,9 @@
 		6F9BA64920BD69AD00B70AFB /* CheapClothes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F9BA64620BD69AD00B70AFB /* CheapClothes.mp3 */; };
 		6F9BA64A20BD69AD00B70AFB /* Hun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F9BA64720BD69AD00B70AFB /* Hun.mp3 */; };
 		6FCC520520DAF25D003CB993 /* SoundeffectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC520420DAF25D003CB993 /* SoundeffectCell.swift */; };
+		6FEBC57E21ADDE62009BF547 /* releaseForm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FEBC57B21ADDE62009BF547 /* releaseForm.mp3 */; };
+		6FEBC57F21ADDE62009BF547 /* boots.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FEBC57C21ADDE62009BF547 /* boots.mp3 */; };
+		6FEBC58021ADDE62009BF547 /* stunning.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FEBC57D21ADDE62009BF547 /* stunning.mp3 */; };
 		890316E920DB94DD00012178 /* Soundeffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890316E820DB94DD00012178 /* Soundeffect.swift */; };
 		89515AA920E4F8630003F15C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89515AA820E4F8630003F15C /* Theme.swift */; };
 		89515AAB20E525C20003F15C /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89515AAA20E525C20003F15C /* UIView+Animation.swift */; };
@@ -97,6 +100,9 @@
 		6F9BA64620BD69AD00B70AFB /* CheapClothes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CheapClothes.mp3; sourceTree = "<group>"; };
 		6F9BA64720BD69AD00B70AFB /* Hun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hun.mp3; sourceTree = "<group>"; };
 		6FCC520420DAF25D003CB993 /* SoundeffectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundeffectCell.swift; sourceTree = "<group>"; };
+		6FEBC57B21ADDE62009BF547 /* releaseForm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = releaseForm.mp3; sourceTree = "<group>"; };
+		6FEBC57C21ADDE62009BF547 /* boots.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boots.mp3; sourceTree = "<group>"; };
+		6FEBC57D21ADDE62009BF547 /* stunning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stunning.mp3; sourceTree = "<group>"; };
 		890316E820DB94DD00012178 /* Soundeffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soundeffect.swift; sourceTree = "<group>"; };
 		89515AA820E4F8630003F15C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		89515AAA20E525C20003F15C /* UIView+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
@@ -198,6 +204,9 @@
 		6F9BA63220BC661600B70AFB /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				6FEBC57C21ADDE62009BF547 /* boots.mp3 */,
+				6FEBC57B21ADDE62009BF547 /* releaseForm.mp3 */,
+				6FEBC57D21ADDE62009BF547 /* stunning.mp3 */,
 				6F9BA63520BCA51F00B70AFB /* Frazzled.mp3 */,
 				6F9BA63620BCA51F00B70AFB /* Games.mp3 */,
 				6F9BA63B20BCA98800B70AFB /* I'mOff.mp3 */,
@@ -317,6 +326,7 @@
 				6F4DC0D920BDF9FB0084C857 /* dictionary.mp3 in Resources */,
 				6F9BA63820BCA51F00B70AFB /* Frazzled.mp3 in Resources */,
 				6F9BA64820BD69AD00B70AFB /* ShutYourMouth.mp3 in Resources */,
+				6FEBC57F21ADDE62009BF547 /* boots.mp3 in Resources */,
 				6F1B371220BECA7C00CC0F45 /* Serious.mp3 in Resources */,
 				6F71F41920BF0C4A007829A4 /* Bell.mp3 in Resources */,
 				6F9BA64A20BD69AD00B70AFB /* Hun.mp3 in Resources */,
@@ -334,7 +344,9 @@
 				6F1DF15120B6CF0E00FB96B0 /* Main.storyboard in Resources */,
 				6F9BA64420BCB07900B70AFB /* Suffer.mp3 in Resources */,
 				6F9BA64220BCAF4C00B70AFB /* Claustrophobic.mp3 in Resources */,
+				6FEBC58021ADDE62009BF547 /* stunning.mp3 in Resources */,
 				6F3E3D9021AC86C0003AE380 /* candy.mp3 in Resources */,
+				6FEBC57E21ADDE62009BF547 /* releaseForm.mp3 in Resources */,
 				6F9BA63C20BCA98800B70AFB /* I'mOff.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,7 +575,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X8DY7X85FX;
 				INFOPLIST_FILE = GCSoundboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,7 +583,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = KMFProggramming.GCSoundboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -583,7 +595,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X8DY7X85FX;
 				INFOPLIST_FILE = GCSoundboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -591,7 +603,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = KMFProggramming.GCSoundboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

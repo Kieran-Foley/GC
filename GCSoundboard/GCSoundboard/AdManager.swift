@@ -13,9 +13,13 @@ class AdManager:  NSObject, GADInterstitialDelegate {
     
     static let SINGLETON = AdManager()
     
+    static let INTERSTITIAL_KEY = "ca-app-pub-1725298510457190/9515229573"
+    static let BANNER_KEY = "ca-app-pub-1725298510457190/7205116574"
+    static let INTERSTITIAL_TEST_KEY = "ca-app-pub-3940256099942544/4411468910"
+    static let BANNER_TEST_KEY = "ca-app-pub-3940256099942544/2934735716"
+
     // Popover ad : ca-app-pub-1725298510457190/9515229573
-    var interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
-    
+    var interstitial = GADInterstitial(adUnitID: AdManager.INTERSTITIAL_KEY)
     
     func showAd() {
         if interstitial.isReady {
@@ -31,7 +35,7 @@ class AdManager:  NSObject, GADInterstitialDelegate {
     }
     
     func createAndLoadInterstitial() {
-        interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+        interstitial = GADInterstitial(adUnitID: AdManager.INTERSTITIAL_KEY)
         interstitial.delegate = self
         interstitial.load(GADRequest())
     }

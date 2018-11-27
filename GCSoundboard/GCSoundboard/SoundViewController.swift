@@ -11,10 +11,10 @@ import GoogleMobileAds
 
 class SoundViewController: UIViewController, GADBannerViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
-    // Actual AdMob Key = ca-app-pub-1725298510457190/7205116574
-    private static let AD_UNIT_ID: String = "ca-app-pub-3940256099942544/2934735716"
-    
     private static let SOUNDEFFECTS: [Soundeffect] = [
+        Soundeffect.init(name: "GC in\nBoots", sound: "boots"),
+        Soundeffect.init(name: "Stunning", sound: "stunning"),
+        Soundeffect.init(name: "Release\nForm!", sound: "releaseForm"),
         Soundeffect.init(name: "Involved", sound: "involved"),
         Soundeffect.init(name: "Be Me", sound: "beMe"),
         Soundeffect.init(name: "Candy", sound: "candy"),
@@ -69,7 +69,7 @@ class SoundViewController: UIViewController, GADBannerViewDelegate, UICollection
         // adMob
         bannerView = GADBannerView(adSize: kGADAdSizeBanner)
         addBannerViewToView(bannerView)
-        bannerView.adUnitID = SoundViewController.AD_UNIT_ID
+        bannerView.adUnitID = AdManager.BANNER_KEY
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         
