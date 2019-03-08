@@ -14,12 +14,13 @@ class MediaPlayerViewController: UIViewController {
     @IBOutlet weak var mediaView: UIView!
     
     let avpController = AVPlayerViewController()
-    let player = AVPlayer()?
+    static let PLAYER = AVPlayer()
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupBackground()
     }
     
     private func playVideo() {
@@ -37,6 +38,21 @@ class MediaPlayerViewController: UIViewController {
         player.play()
     }
     
+    func setupBackground() {
+        let gradient = CAGradientLayer()
+        mediaView.backgroundColor = .CG_PINK
+        
+        // Create a gradient at 3/4 down the view
+        gradient.locations = [0.75, 1]
+        gradient.frame = self.view.bounds
+        gradient.colors = [UIColor.CG_PINK.cgColor, UIColor.white.cgColor]
+        
+        self.view.layer.insertSublayer(gradient, at: 0)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        player.pause()
+    }
     
     
     @IBAction func pressed(_ sender: Any) {
