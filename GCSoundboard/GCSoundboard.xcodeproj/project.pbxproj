@@ -30,6 +30,8 @@
 		6F71F41720BF0C39007829A4 /* Talking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F71F41620BF0C38007829A4 /* Talking.mp3 */; };
 		6F71F41920BF0C4A007829A4 /* Bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F71F41820BF0C4A007829A4 /* Bell.mp3 */; };
 		6F71F41B20BF0C85007829A4 /* No.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F71F41A20BF0C85007829A4 /* No.mp3 */; };
+		6F848B842231B98D007F90F4 /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F848B832231B98D007F90F4 /* MediaPlayerViewController.swift */; };
+		6F848B872231C2D5007F90F4 /* loveIsland.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6F848B862231C2CE007F90F4 /* loveIsland.mp4 */; };
 		6F9BA63820BCA51F00B70AFB /* Frazzled.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F9BA63520BCA51F00B70AFB /* Frazzled.mp3 */; };
 		6F9BA63920BCA51F00B70AFB /* Games.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F9BA63620BCA51F00B70AFB /* Games.mp3 */; };
 		6F9BA63C20BCA98800B70AFB /* I'mOff.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F9BA63B20BCA98800B70AFB /* I'mOff.mp3 */; };
@@ -89,6 +91,8 @@
 		6F71F41620BF0C38007829A4 /* Talking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Talking.mp3; sourceTree = "<group>"; };
 		6F71F41820BF0C4A007829A4 /* Bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bell.mp3; sourceTree = "<group>"; };
 		6F71F41A20BF0C85007829A4 /* No.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = No.mp3; sourceTree = "<group>"; };
+		6F848B832231B98D007F90F4 /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
+		6F848B862231C2CE007F90F4 /* loveIsland.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loveIsland.mp4; sourceTree = "<group>"; };
 		6F9BA63520BCA51F00B70AFB /* Frazzled.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Frazzled.mp3; sourceTree = "<group>"; };
 		6F9BA63620BCA51F00B70AFB /* Games.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Games.mp3; sourceTree = "<group>"; };
 		6F9BA63B20BCA98800B70AFB /* I'mOff.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "I'mOff.mp3"; sourceTree = "<group>"; };
@@ -185,9 +189,11 @@
 				89515AAA20E525C20003F15C /* UIView+Animation.swift */,
 				6F1DF14D20B6CF0E00FB96B0 /* SoundViewController.swift */,
 				6FCC520420DAF25D003CB993 /* SoundeffectCell.swift */,
+				6F848B832231B98D007F90F4 /* MediaPlayerViewController.swift */,
 				6F3E3D9121AC8D60003AE380 /* AdManager.swift */,
 				890316E820DB94DD00012178 /* Soundeffect.swift */,
 				89515AA820E4F8630003F15C /* Theme.swift */,
+				6F848B862231C2CE007F90F4 /* loveIsland.mp4 */,
 			);
 			path = GCSoundboard;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F848B872231C2D5007F90F4 /* loveIsland.mp4 in Resources */,
 				6F9BA64020BCAC6C00B70AFB /* Money.mp3 in Resources */,
 				6F3E3D8E21AC867C003AE380 /* involved.mp3 in Resources */,
 				6F3E3D8D21AC867C003AE380 /* beMe.mp3 in Resources */,
@@ -405,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1DF14E20B6CF0E00FB96B0 /* SoundViewController.swift in Sources */,
+				6F848B842231B98D007F90F4 /* MediaPlayerViewController.swift in Sources */,
 				6F1DF16C20B7355700FB96B0 /* AudioManager.swift in Sources */,
 				6F3E3D9221AC8D60003AE380 /* AdManager.swift in Sources */,
 				890316E920DB94DD00012178 /* Soundeffect.swift in Sources */,
