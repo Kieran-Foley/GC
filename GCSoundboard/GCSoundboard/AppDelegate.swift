@@ -12,14 +12,12 @@ import GoogleMobileAds
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    private static let GAD_ID: String = "ca-app-pub-1725298510457190~2692276056"
-
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         // Initialize the Google Mobile Ads SDK.
-        GADMobileAds.configure(withApplicationID: AppDelegate.GAD_ID)
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
         return true
     }
 

@@ -14,9 +14,7 @@ class MediaPlayerViewController: UIViewController {
     @IBOutlet weak var mediaView: UIView!
     
     let avpController = AVPlayerViewController()
-    static let PLAYER = AVPlayer()
-    
-    
+    let player = AVPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
