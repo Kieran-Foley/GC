@@ -18,8 +18,8 @@ class AdManager:  NSObject, GADInterstitialDelegate {
     static let INTERSTITIAL_TEST_KEY = "ca-app-pub-3940256099942544/4411468910"
     static let BANNER_TEST_KEY = "ca-app-pub-3940256099942544/2934735716"
 
-    // Popover ad : ca-app-pub-1725298510457190/9515229573
-    var interstitial = GADInterstitial(adUnitID: AdManager.INTERSTITIAL_KEY)
+    // FIXME: Change back to Interstitial_key when archiving for release
+    var interstitial = GADInterstitial(adUnitID: AdManager.INTERSTITIAL_TEST_KEY)
     
     func showAd() {
         if interstitial.isReady {

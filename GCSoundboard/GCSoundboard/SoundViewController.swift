@@ -66,32 +66,13 @@ class SoundViewController: UIViewController, GADBannerViewDelegate, UICollection
         self.stopSoundButton.adjustsImageWhenHighlighted = false
         self.randomButton.adjustsImageWhenHighlighted = false
         
-        // adMob
-        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-        addBannerViewToView(bannerView)
-        bannerView.adUnitID = AdManager.BANNER_KEY
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
+        redrawButtons()
+        setupAdBanner()
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        
-        // Setup random / stop sound button cells
-        stopSoundButton.backgroundColor = UIColor.clear
-        randomButton.backgroundColor = UIColor.clear
-        stopSoundButton.layer.borderWidth = 7
-        randomButton.layer.borderWidth = 7
-        stopSoundButton.layer.borderColor = UIColor.white.cgColor
-        randomButton.layer.borderColor = UIColor.white.cgColor
-        
-        // Button labels
-        stopSoundButton.setTitle("Stop\nSound", for: .normal)
-        randomButton.setTitle("Random\nSound", for: .normal)
-        stopSoundButton.titleLabel?.numberOfLines = 2
-        randomButton.titleLabel?.numberOfLines = 2
-        stopSoundButton.titleLabel?.textAlignment = .center
-        randomButton.titleLabel?.textAlignment = .center
-        
+    
+        //FIXME: Find a better way to dynamically change the font size
         if UIScreen.main.bounds.width == 320.0 {
             stopSoundButton.titleLabel?.font =  UIFont(name: "ChalkboardSE-Bold", size: 16)
             randomButton.titleLabel?.font =  UIFont(name: "ChalkboardSE-Bold", size: 16)
@@ -100,13 +81,31 @@ class SoundViewController: UIViewController, GADBannerViewDelegate, UICollection
             randomButton.titleLabel?.font =  UIFont(name: "ChalkboardSE-Bold", size: 18)
         }
     }
-
-    // FIXME: Shouldn't be changing layouts at runtime
-    override func viewDidAppear(_ animated: Bool) {
-        stopSoundButton.layer.cornerRadius = stopSoundButton.frame.width / 2
-        randomButton.layer.cornerRadius = randomButton.frame.width / 2
+    
+    private func redrawButtons() {
+        stopSoundButton.backgroundColor = UIColor.clear
+        randomButton.backgroundColor = UIColor.clear
+        stopSoundButton.layer.borderWidth = 7
+        randomButton.layer.borderWidth = 7
+        stopSoundButton.layer.borderColor = UIColor.white.cgColor
+        randomButton.layer.borderColor = UIColor.white.cgColor
+        
+        stopSoundButton.setTitle("Stop\nSound", for: .normal)
+        randomButton.setTitle("Random\nSound", for: .normal)
+        stopSoundButton.titleLabel?.numberOfLines = 2
+        randomButton.titleLabel?.numberOfLines = 2
+        stopSoundButton.titleLabel?.textAlignment = .center
+        randomButton.titleLabel?.textAlignment = .center
     }
-
+    
+    private func setupAdBanner() {
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        addBannerViewToView(bannerView)
+        bannerView.adUnitID = AdManager.BANNER_KEY
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+    }
+    
     // Set adMob banners constraints to safe area
     func addBannerViewToView(_ bannerView: GADBannerView) {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
@@ -116,6 +115,12 @@ class SoundViewController: UIViewController, GADBannerViewDelegate, UICollection
         
         bannerView.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor, constant: 0).isActive = true
         bannerView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0).isActive = true
+    }
+
+    // FIXME: Shouldn't be changing layouts at runtime
+    override func viewDidAppear(_ animated: Bool) {
+        stopSoundButton.layer.cornerRadius = stopSoundButton.frame.width / 2
+        randomButton.layer.cornerRadius = randomButton.frame.width / 2
     }
     
     func setupBackground() {

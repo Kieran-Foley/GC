@@ -8,7 +8,6 @@
 
 import UIKit
 
-// Extends UIView for animations
 extension UIView {
     
     func spin() {

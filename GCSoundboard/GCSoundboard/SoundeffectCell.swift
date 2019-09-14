@@ -13,9 +13,9 @@ class SoundeffectCell: UICollectionViewCell {
     // RE-USE Identifier
     static let CELL_ID: String = "soundeffectCell"
     
-    let nameLabel: UILabel = UILabel()
+    private let nameLabel: UILabel = UILabel()
     
-    var soundeffect: Soundeffect?
+    private var soundeffect: Soundeffect?
 
     func setup(_ soundeffect: Soundeffect) -> Void {
         self.soundeffect = soundeffect

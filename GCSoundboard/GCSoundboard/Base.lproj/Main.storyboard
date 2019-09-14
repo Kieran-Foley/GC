@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -72,14 +72,6 @@
                                     <constraint firstItem="zzy-ix-fr6" firstAttribute="top" secondItem="R6Q-Su-xoQ" secondAttribute="top" constant="10" id="wiR-dM-yZ1"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1p-G7-pB3">
-                                <rect key="frame" x="296" y="38" width="64" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="lpv-ws-I3a" kind="show" id="vlf-6M-7fv"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -168,63 +160,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bZ7-Rl-hw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="740" y="1074"/>
-        </scene>
-        <!--Media Player View Controller-->
-        <scene sceneID="QFV-4f-SmW">
-            <objects>
-                <viewController id="lpv-ws-I3a" customClass="MediaPlayerViewController" customModule="GCSoundboard" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eo4-qr-lan">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cJU-nl-mj0">
-                                <rect key="frame" x="16" y="155" width="343" height="263"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GCTitle" translatesAutoresizingMaskIntoConstraints="NO" id="Del-dK-bVS">
-                                <rect key="frame" x="70" y="30" width="235" height="78"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Del-dK-bVS" secondAttribute="height" multiplier="238:79" id="lhg-M4-6KS"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJv-dC-Fqy">
-                                <rect key="frame" x="126" y="445" width="122" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="PLAY">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="pressed:" destination="lpv-ws-I3a" eventType="touchUpInside" id="L0l-Fv-zQM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOn-fE-Dvo">
-                                <rect key="frame" x="126" y="541" width="122" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="BACK">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="hWT-Z4-Yks"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Del-dK-bVS" firstAttribute="centerX" secondItem="eo4-qr-lan" secondAttribute="centerX" id="Ffz-S7-wNT"/>
-                            <constraint firstItem="Del-dK-bVS" firstAttribute="leading" secondItem="7pN-31-da3" secondAttribute="leading" constant="70" id="Jpq-wM-svX"/>
-                            <constraint firstItem="Del-dK-bVS" firstAttribute="top" secondItem="7pN-31-da3" secondAttribute="top" constant="10" id="TUj-lA-nc9"/>
-                            <constraint firstItem="7pN-31-da3" firstAttribute="trailing" secondItem="Del-dK-bVS" secondAttribute="trailing" constant="70" id="u7P-Ab-8GN"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="7pN-31-da3"/>
-                    </view>
-                    <connections>
-                        <outlet property="mediaView" destination="cJU-nl-mj0" id="sqP-j5-Y2X"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sec-Oh-cV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1256.8" y="-22.03898050974513"/>
         </scene>
     </scenes>
     <resources>
