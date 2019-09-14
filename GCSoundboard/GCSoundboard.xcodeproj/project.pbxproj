@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		140BDAE4022373C09B0135A7 /* Pods_GCSoundboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59A38256AA23EC297AAD602 /* Pods_GCSoundboardTests.framework */; };
+		5393D21E232CF4230039D959 /* TabController+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393D21D232CF4230039D959 /* TabController+Appearance.swift */; };
+		5393D220232D0F1B0039D959 /* MemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393D21F232D0F1B0039D959 /* MemeViewController.swift */; };
+		5393D223232D104B0039D959 /* MemeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393D221232D104B0039D959 /* MemeCell.swift */; };
+		5393D224232D104B0039D959 /* MemeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5393D222232D104B0039D959 /* MemeCell.xib */; };
+		5393D227232D1DC90039D959 /* UIView+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393D226232D1DC90039D959 /* UIView+Appearance.swift */; };
 		6F1B371020BECA7C00CC0F45 /* Cloned.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1B370D20BECA7C00CC0F45 /* Cloned.mp3 */; };
 		6F1B371120BECA7C00CC0F45 /* Cyah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1B370E20BECA7C00CC0F45 /* Cyah.mp3 */; };
 		6F1B371220BECA7C00CC0F45 /* Serious.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F1B370F20BECA7C00CC0F45 /* Serious.mp3 */; };
@@ -47,7 +52,7 @@
 		6FEBC57F21ADDE62009BF547 /* boots.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FEBC57C21ADDE62009BF547 /* boots.mp3 */; };
 		6FEBC58021ADDE62009BF547 /* stunning.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FEBC57D21ADDE62009BF547 /* stunning.mp3 */; };
 		890316E920DB94DD00012178 /* Soundeffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890316E820DB94DD00012178 /* Soundeffect.swift */; };
-		89515AA920E4F8630003F15C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89515AA820E4F8630003F15C /* Theme.swift */; };
+		89515AA920E4F8630003F15C /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89515AA820E4F8630003F15C /* UIColor+Theme.swift */; };
 		89515AAB20E525C20003F15C /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89515AAA20E525C20003F15C /* UIView+Animation.swift */; };
 		B844383AB13C1ADC2FD17AB4 /* Pods_GCSoundboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F9EB189356A89DB7D6E437 /* Pods_GCSoundboard.framework */; };
 /* End PBXBuildFile section */
@@ -65,6 +70,11 @@
 /* Begin PBXFileReference section */
 		1DF129B1EB3AAFFA5543ED0F /* Pods-GCSoundboardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCSoundboardTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GCSoundboardTests/Pods-GCSoundboardTests.debug.xcconfig"; sourceTree = "<group>"; };
 		27F9EB189356A89DB7D6E437 /* Pods_GCSoundboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GCSoundboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5393D21D232CF4230039D959 /* TabController+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabController+Appearance.swift"; sourceTree = "<group>"; };
+		5393D21F232D0F1B0039D959 /* MemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeViewController.swift; sourceTree = "<group>"; };
+		5393D221232D104B0039D959 /* MemeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeCell.swift; sourceTree = "<group>"; };
+		5393D222232D104B0039D959 /* MemeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemeCell.xib; sourceTree = "<group>"; };
+		5393D226232D1DC90039D959 /* UIView+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Appearance.swift"; sourceTree = "<group>"; };
 		6F1B370D20BECA7C00CC0F45 /* Cloned.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cloned.mp3; sourceTree = "<group>"; };
 		6F1B370E20BECA7C00CC0F45 /* Cyah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cyah.mp3; sourceTree = "<group>"; };
 		6F1B370F20BECA7C00CC0F45 /* Serious.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Serious.mp3; sourceTree = "<group>"; };
@@ -108,7 +118,7 @@
 		6FEBC57C21ADDE62009BF547 /* boots.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boots.mp3; sourceTree = "<group>"; };
 		6FEBC57D21ADDE62009BF547 /* stunning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stunning.mp3; sourceTree = "<group>"; };
 		890316E820DB94DD00012178 /* Soundeffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soundeffect.swift; sourceTree = "<group>"; };
-		89515AA820E4F8630003F15C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		89515AA820E4F8630003F15C /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		89515AAA20E525C20003F15C /* UIView+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
 		A9218CD5D83EA76CA1935703 /* Pods-GCSoundboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCSoundboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GCSoundboard/Pods-GCSoundboard.debug.xcconfig"; sourceTree = "<group>"; };
 		C8A0AF593C44A35F0BD04ABB /* Pods-GCSoundboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCSoundboardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GCSoundboardTests/Pods-GCSoundboardTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +166,27 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5393D225232D10510039D959 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5393D221232D104B0039D959 /* MemeCell.swift */,
+				5393D222232D104B0039D959 /* MemeCell.xib */,
+				6FCC520420DAF25D003CB993 /* SoundeffectCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5393D228232D1E4B0039D959 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				89515AA820E4F8630003F15C /* UIColor+Theme.swift */,
+				89515AAA20E525C20003F15C /* UIView+Animation.swift */,
+				5393D21D232CF4230039D959 /* TabController+Appearance.swift */,
+				5393D226232D1DC90039D959 /* UIView+Appearance.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
 		6F1DF13F20B6CF0E00FB96B0 = {
 			isa = PBXGroup;
 			children = (
@@ -180,20 +211,20 @@
 		6F1DF14A20B6CF0E00FB96B0 /* GCSoundboard */ = {
 			isa = PBXGroup;
 			children = (
+				5393D225232D10510039D959 /* Cells */,
+				5393D228232D1E4B0039D959 /* Ext */,
 				6F1DF14B20B6CF0E00FB96B0 /* AppDelegate.swift */,
 				6F1DF16B20B7355700FB96B0 /* AudioManager.swift */,
 				6F1DF14F20B6CF0E00FB96B0 /* Main.storyboard */,
 				6F1DF15220B6CF1600FB96B0 /* Assets.xcassets */,
 				6F1DF15420B6CF1600FB96B0 /* LaunchScreen.storyboard */,
 				6F1DF15720B6CF1600FB96B0 /* Info.plist */,
-				89515AAA20E525C20003F15C /* UIView+Animation.swift */,
 				6F1DF14D20B6CF0E00FB96B0 /* SoundViewController.swift */,
-				6FCC520420DAF25D003CB993 /* SoundeffectCell.swift */,
 				6F848B832231B98D007F90F4 /* MediaPlayerViewController.swift */,
 				6F3E3D9121AC8D60003AE380 /* AdManager.swift */,
 				890316E820DB94DD00012178 /* Soundeffect.swift */,
-				89515AA820E4F8630003F15C /* Theme.swift */,
 				6F848B862231C2CE007F90F4 /* loveIsland.mp4 */,
+				5393D21F232D0F1B0039D959 /* MemeViewController.swift */,
 			);
 			path = GCSoundboard;
 			sourceTree = "<group>";
@@ -326,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F848B872231C2D5007F90F4 /* loveIsland.mp4 in Resources */,
+				5393D224232D104B0039D959 /* MemeCell.xib in Resources */,
 				6F9BA64020BCAC6C00B70AFB /* Money.mp3 in Resources */,
 				6F3E3D8E21AC867C003AE380 /* involved.mp3 in Resources */,
 				6F3E3D8D21AC867C003AE380 /* beMe.mp3 in Resources */,
@@ -432,11 +464,15 @@
 				6F1DF14E20B6CF0E00FB96B0 /* SoundViewController.swift in Sources */,
 				6F848B842231B98D007F90F4 /* MediaPlayerViewController.swift in Sources */,
 				6F1DF16C20B7355700FB96B0 /* AudioManager.swift in Sources */,
+				5393D227232D1DC90039D959 /* UIView+Appearance.swift in Sources */,
 				6F3E3D9221AC8D60003AE380 /* AdManager.swift in Sources */,
 				890316E920DB94DD00012178 /* Soundeffect.swift in Sources */,
 				6FCC520520DAF25D003CB993 /* SoundeffectCell.swift in Sources */,
+				5393D220232D0F1B0039D959 /* MemeViewController.swift in Sources */,
 				6F1DF14C20B6CF0E00FB96B0 /* AppDelegate.swift in Sources */,
-				89515AA920E4F8630003F15C /* Theme.swift in Sources */,
+				5393D21E232CF4230039D959 /* TabController+Appearance.swift in Sources */,
+				5393D223232D104B0039D959 /* MemeCell.swift in Sources */,
+				89515AA920E4F8630003F15C /* UIColor+Theme.swift in Sources */,
 				89515AAB20E525C20003F15C /* UIView+Animation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

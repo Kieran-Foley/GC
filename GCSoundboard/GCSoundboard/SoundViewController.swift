@@ -39,7 +39,7 @@ class SoundViewController: UIViewController, GADBannerViewDelegate, UICollection
         Soundeffect.init(name: "Cheap\nClothes", sound: "CheapClothes"),
         Soundeffect.init(name: "Me\nAgain", sound: "SaidMeAgain"),
         Soundeffect.init(name: "Shut Your\nMouth", sound: "ShutYourMouth")
-]
+    ]
     
     private static let CELLS_PER_ROW: CGFloat = 3
     
@@ -51,9 +51,7 @@ class SoundViewController: UIViewController, GADBannerViewDelegate, UICollection
     
     // Plays a random sound from SOUNDEFFECTS
     @IBOutlet weak var randomButton: UIButton!
-    
-    var bannerView: GADBannerView!
-    
+        
     var cellSpacing: CGFloat?
     var cellDimensions: CGFloat?
     
@@ -97,41 +95,11 @@ class SoundViewController: UIViewController, GADBannerViewDelegate, UICollection
         stopSoundButton.titleLabel?.textAlignment = .center
         randomButton.titleLabel?.textAlignment = .center
     }
-    
-    private func setupAdBanner() {
-        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-        addBannerViewToView(bannerView)
-        bannerView.adUnitID = AdManager.BANNER_KEY
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
-    }
-    
-    // Set adMob banners constraints to safe area
-    func addBannerViewToView(_ bannerView: GADBannerView) {
-        bannerView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(bannerView)
-        
-        let safeArea = self.view.safeAreaLayoutGuide
-        
-        bannerView.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor, constant: 0).isActive = true
-        bannerView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0).isActive = true
-    }
 
     // FIXME: Shouldn't be changing layouts at runtime
     override func viewDidAppear(_ animated: Bool) {
         stopSoundButton.layer.cornerRadius = stopSoundButton.frame.width / 2
         randomButton.layer.cornerRadius = randomButton.frame.width / 2
-    }
-    
-    func setupBackground() {
-        let gradient = CAGradientLayer()
-        
-        // Create a gradient at 3/4 down the view
-        gradient.locations = [0.75, 1]
-        gradient.frame = self.view.bounds
-        gradient.colors = [UIColor.CG_PINK.cgColor, UIColor.white.cgColor]
-        
-        self.view.layer.insertSublayer(gradient, at: 0)
     }
     
     // Stop all current sounds playing and animate button
