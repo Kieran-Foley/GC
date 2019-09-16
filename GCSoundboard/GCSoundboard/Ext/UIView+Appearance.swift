@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleMobileAds
+import Lottie
 
 extension UIViewController {
 
@@ -44,5 +45,14 @@ extension UIViewController {
         
         bannerView.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor, constant: 0).isActive = true
         bannerView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0).isActive = true
+    }
+    
+    func playAnimation(view: AnimationView, animation: String) {
+        view.animation = Animation.named(animation)
+        view.loopMode = .playOnce
+        
+        view.play { finished in
+            view.removeFromSuperview()
+        }
     }
 }

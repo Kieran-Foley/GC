@@ -8,10 +8,10 @@
 
 import UIKit
 
-class MemeCell: UICollectionViewCell {
+class MemeCell: UICollectionViewCell, UIGestureRecognizerDelegate {
     
     static let CELL_ID: String = "meme_cell"
-
+    
     @IBOutlet weak var imageView: UIImageView!
 
     func setup(image: UIImage) {
@@ -20,5 +20,7 @@ class MemeCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        }
+
+    }
+
 }

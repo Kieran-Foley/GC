@@ -12,5 +12,7 @@ target 'GCSoundboard' do
     # Pods for testing
   end
   pod 'Google-Mobile-Ads-SDK'
+  pod 'lottie-ios'
+
 
 end

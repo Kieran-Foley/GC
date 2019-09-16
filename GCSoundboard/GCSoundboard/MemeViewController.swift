@@ -7,10 +7,15 @@
 //
 
 import UIKit
+import Lottie
 
 class MemeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    private let animationView = AnimationView()
+    
+    private var count = 0
     
     private let memeBank: [UIImage?] = [
         UIImage(named: "meme1"),
@@ -47,6 +52,8 @@ class MemeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         setupBackground()
         setupAdBanner()
         
+        AdManager.SINGLETON.createAndLoadInterstitial()
+        
         self.collectionView.register(UINib(nibName: "MemeCell", bundle: nil), forCellWithReuseIdentifier: MemeCell.CELL_ID)
     }
     
@@ -56,12 +63,23 @@ class MemeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MemeCell.CELL_ID, for: indexPath) as! MemeCell
-                cell.setup(image: memeBank[indexPath.row]!)
+        cell.setup(image: memeBank[indexPath.row]!)
+    
+        let tapGesture = TapGesture(target: self, action: #selector(self.openCall))
+        tapGesture.image = memeBank[indexPath.row]!
+        cell.addGestureRecognizer(tapGesture)
         
         return cell
-        
     }
     
+    @objc func openCall(sender : TapGesture) {
+        
+        if (sender.state == UIGestureRecognizerState.began) {
+            print("Long press detected.");
+            UIImageWriteToSavedPhotosAlbum(sender.image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+        }
+    }
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width / 2, height: 125)
     }
@@ -70,7 +88,30 @@ class MemeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         return 0
     }
     
+    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        
+        if error != nil {
+            let ac = UIAlertController(title: "Save error", message: "The GC needs permission to write to your photo library, please allow access in your devices settings.", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac,animated: true)
+        } else {
+            savedAnimation()
+            count += 1
+            
+            if count == 3 {
+                AdManager.SINGLETON.showAd()
+                count = 0
+            }
+        }
+    }
+    
+    private func savedAnimation() {
+        
+        let animationX = Int(self.view.frame.width / 2 - 25)
+        let animationY = Int(self.view.frame.height - 200)
+        animationView.frame = CGRect(x: animationX, y: animationY, width: 50, height: 50)
+        self.view.addSubview(animationView)
+        playAnimation(view: animationView, animation: "saved")
+    }
+    
 }
-
-// Todo:
-// Interstitual ad
