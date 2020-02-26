@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		140BDAE4022373C09B0135A7 /* Pods_GCSoundboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59A38256AA23EC297AAD602 /* Pods_GCSoundboardTests.framework */; };
 		5319B03A232EADC700763175 /* saved.json in Resources */ = {isa = PBXBuildFile; fileRef = 5319B039232EADC700763175 /* saved.json */; };
-		5319B03C232FF50C00763175 /* saved.json in Resources */ = {isa = PBXBuildFile; fileRef = 5319B03B232FF50C00763175 /* saved.json */; };
 		5393D21E232CF4230039D959 /* TabController+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393D21D232CF4230039D959 /* TabController+Appearance.swift */; };
 		5393D220232D0F1B0039D959 /* MemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393D21F232D0F1B0039D959 /* MemeViewController.swift */; };
 		5393D223232D104B0039D959 /* MemeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393D221232D104B0039D959 /* MemeCell.swift */; };
@@ -75,7 +74,6 @@
 		1DF129B1EB3AAFFA5543ED0F /* Pods-GCSoundboardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCSoundboardTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GCSoundboardTests/Pods-GCSoundboardTests.debug.xcconfig"; sourceTree = "<group>"; };
 		27F9EB189356A89DB7D6E437 /* Pods_GCSoundboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GCSoundboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5319B039232EADC700763175 /* saved.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = saved.json; sourceTree = "<group>"; };
-		5319B03B232FF50C00763175 /* saved.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = saved.json; path = ../../../../../Downloads/saved.json; sourceTree = "<group>"; };
 		5393D21D232CF4230039D959 /* TabController+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabController+Appearance.swift"; sourceTree = "<group>"; };
 		5393D21F232D0F1B0039D959 /* MemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeViewController.swift; sourceTree = "<group>"; };
 		5393D221232D104B0039D959 /* MemeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeCell.swift; sourceTree = "<group>"; };
@@ -226,7 +224,6 @@
 				5319B039232EADC700763175 /* saved.json */,
 				6F1DF16B20B7355700FB96B0 /* AudioManager.swift */,
 				6F1DF14F20B6CF0E00FB96B0 /* Main.storyboard */,
-				5319B03B232FF50C00763175 /* saved.json */,
 				6F1DF15220B6CF1600FB96B0 /* Assets.xcassets */,
 				6F1DF15420B6CF1600FB96B0 /* LaunchScreen.storyboard */,
 				6F1DF15720B6CF1600FB96B0 /* Info.plist */,
@@ -377,7 +374,6 @@
 				6F71F41B20BF0C85007829A4 /* No.mp3 in Resources */,
 				6F9BA63920BCA51F00B70AFB /* Games.mp3 in Resources */,
 				6F4DC0D920BDF9FB0084C857 /* dictionary.mp3 in Resources */,
-				5319B03C232FF50C00763175 /* saved.json in Resources */,
 				6F9BA63820BCA51F00B70AFB /* Frazzled.mp3 in Resources */,
 				6F9BA64820BD69AD00B70AFB /* ShutYourMouth.mp3 in Resources */,
 				6FEBC57F21ADDE62009BF547 /* boots.mp3 in Resources */,
@@ -658,6 +654,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = KMFProggramming.GCSoundboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -678,6 +675,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = KMFProggramming.GCSoundboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

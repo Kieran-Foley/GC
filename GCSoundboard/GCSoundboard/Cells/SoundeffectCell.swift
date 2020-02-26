@@ -47,15 +47,15 @@ class SoundeffectCell: UICollectionViewCell {
     @objc func tap(sender: UITapGestureRecognizer){
         self.spin()
         AudioManager.singleton.playSound(name: (soundeffect?.soundPath)!)
-        randomAd()
+//        randomAd()
         let impact = UIImpactFeedbackGenerator()
         impact.impactOccurred()
     }
     
-    func randomAd() {
-        let number = Int.random(in: 0 ... 7)
-        if number == 5 {
-            AdManager.SINGLETON.showAd()
-        }
-    }
+//    func randomAd() {
+//        let number = Int.random(in: 0 ... 7)
+//        if number == 5 {
+//            AdManager.SINGLETON.showAd()
+//        }
+//    }
 }

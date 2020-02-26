@@ -25,16 +25,16 @@ extension UIViewController {
     
     
 
-    func setupAdBanner() {
-        
-        var bannerView: GADBannerView!
-
-        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-        addBannerViewToView(bannerView)
-        bannerView.adUnitID = AdManager.BANNER_KEY
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
-    }
+//    func setupAdBanner() {
+//        
+//        var bannerView: GADBannerView!
+//
+//        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+//        addBannerViewToView(bannerView)
+//        bannerView.adUnitID = AdManager.BANNER_KEY
+//        bannerView.rootViewController = self
+//        bannerView.load(GADRequest())
+//    }
     
     // Set adMob banners constraints to safe area
     func addBannerViewToView(_ bannerView: GADBannerView) {

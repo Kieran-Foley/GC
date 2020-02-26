@@ -14,8 +14,7 @@ class MemeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var collectionView: UICollectionView!
     
     private let animationView = AnimationView()
-    
-    private var count = 0
+    private var interstitualAdCount = 0
     
     private let memeBank: [UIImage?] = [
         UIImage(named: "meme1"),
@@ -50,9 +49,9 @@ class MemeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         collectionView.dataSource = self
         
         setupBackground()
-        setupAdBanner()
+//        setupAdBanner()
         
-        AdManager.SINGLETON.createAndLoadInterstitial()
+//        AdManager.SINGLETON.createAndLoadInterstitial()
         
         self.collectionView.register(UINib(nibName: "MemeCell", bundle: nil), forCellWithReuseIdentifier: MemeCell.CELL_ID)
     }
@@ -96,22 +95,21 @@ class MemeViewController: UIViewController, UICollectionViewDelegate, UICollecti
             present(ac,animated: true)
         } else {
             savedAnimation()
-            count += 1
-            
-            if count == 3 {
-                AdManager.SINGLETON.showAd()
-                count = 0
-            }
+//            interstitualAdCount += 1
+//            
+//            if interstitualAdCount == 3 {
+//                AdManager.SINGLETON.showAd()
+//                interstitualAdCount = 0
+//            }
         }
     }
     
     private func savedAnimation() {
-        
+        // FIXME: Sort of anchors instead of hard coded constraints
         let animationX = Int(self.view.frame.width / 2 - 25)
         let animationY = Int(self.view.frame.height - 200)
         animationView.frame = CGRect(x: animationX, y: animationY, width: 50, height: 50)
         self.view.addSubview(animationView)
         playAnimation(view: animationView, animation: "saved")
     }
-    
 }

@@ -58,14 +58,14 @@ class SoundViewController: UIViewController, GADBannerViewDelegate, UICollection
     override func viewDidLoad() {
         setupBackground()
         
-        AdManager.SINGLETON.createAndLoadInterstitial()
+//        AdManager.SINGLETON.createAndLoadInterstitial()
         
         // Stops the default animation of UIButton when user interacts (Grey highlight)
         self.stopSoundButton.adjustsImageWhenHighlighted = false
         self.randomButton.adjustsImageWhenHighlighted = false
         
         redrawButtons()
-        setupAdBanner()
+//        setupAdBanner()
         
         collectionView.delegate = self
         collectionView.dataSource = self
